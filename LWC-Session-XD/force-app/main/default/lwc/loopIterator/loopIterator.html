@@ -1,0 +1,13 @@
+<template>
+    <!-- For Each Directive -->
+    <template if:true={contacts.length} for:each={contacts} for:item='contact' for:index='index'>
+        <div class='slds-box' key={contact.id}>{contact.firstname} - {contact.lastname}</div>
+    </template>
+
+    <!-- Iterator Directive -->
+    <!--<template iterator:contact={contacts}>
+        <template if:true={contact.first}>
+            <div class='slds-box' key={contact.value.id}>{contact.value.firstname} - {contact.value.lastname}</div>
+        </template>
+    </template>-->
+</template>
