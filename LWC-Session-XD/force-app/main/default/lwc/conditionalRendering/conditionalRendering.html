@@ -1,0 +1,23 @@
+<template>
+    <template if:true={showText}>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis gravida dui.
+            Maecenas et erat nec tellus dapibus imperdiet. Sed tempus dui vel ante gravida, 
+            sed maximus ligula laoreet.
+        </p>
+    </template>
+
+    <template if:false={showText}>
+        <p>
+            Click on the button.
+        </p>
+    </template>
+
+    <lightning-button
+        label='Show Text'
+        variant='brand'
+        onclick={showTextClicked}>
+    </lightning-button>
+
+
+</template>
