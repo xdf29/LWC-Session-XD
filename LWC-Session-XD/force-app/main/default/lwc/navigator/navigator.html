@@ -1,0 +1,32 @@
+<template>
+    <lightning-button 
+        label='Create Contact' 
+        name='Create Contact' 
+        class='slds-m-around_medium' 
+        onclick={createContact}>
+    </lightning-button>
+
+    <lightning-button 
+        label='Edit Sample Contact' 
+        name='Edit Sample Contact' 
+        data-contact-id='0032y000005WuniAAC' 
+        class='slds-m-around_medium' 
+        onclick={editContact}>
+    </lightning-button>
+
+    <lightning-button 
+        label='View Sample Contact' 
+        name='View Sample Contact' 
+        data-contact-id='0032y000005WuniAAC' 
+        class='slds-m-around_medium' 
+        onclick={viewContact}>
+    </lightning-button>
+
+    <lightning-button 
+        label='Navigate External Web URL' 
+        name='Navigate External Web URL' 
+        data-web-url='https://www.google.com' 
+        class='slds-m-around_medium' 
+        onclick={navigateWebURL}>
+    </lightning-button>
+</template>
