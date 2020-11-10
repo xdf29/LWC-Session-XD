@@ -1,0 +1,10 @@
+<template>
+    <div class='parentBorder'>
+        <p>I am the parent Component</p>
+        <div class='childBorder'>
+            <template if:true={contacts.length} for:each={contacts} for:item='contact' for:index='index'>
+                <c-child-component key={contact.id} contact={contact} ></c-child-component>
+            </template>
+        </div>
+    </div>
+</template>
