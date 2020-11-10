@@ -1,0 +1,13 @@
+/*p{
+    color: red;
+}*/
+
+.childBorder{
+    border: 1px solid blue;
+    padding: 20px;
+}
+
+.parentBorder{
+    border: 1px solid red;
+    padding: 20px;
+}
